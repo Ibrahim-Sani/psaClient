@@ -24,7 +24,7 @@ const Signup = () => {
     console.log({ email, password, firstname, lastname, username, gender })
 
     try {
-      const res = await axios.post("http://localhost:4000/api/users/signUp", {
+      const res = await axios.post("psaserverside-production.up.railway.app/api/users/signUp", {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           first_name: firstname,
